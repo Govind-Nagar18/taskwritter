@@ -1,0 +1,98 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: teal;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #task-form {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: rgb(75, 143, 163);
+            border-radius: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        #task-input, #add-task {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #task-input {
+            flex-grow: 1;
+        }
+
+        #add-task {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        #task-list {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(51, 151, 151, 0.55);
+            border-radius: 5px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+
+        .task-buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .complete-btn, .delete-btn {
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .complete-btn {
+            background: rgb(61, 163, 61);
+        }
+
+        .delete-btn {
+            background: rgb(167, 67, 60);
+        }
+
+        #task-stats {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            background: rgba(51, 151, 151, 0.55);
+            border-radius: 10px;
+        }
